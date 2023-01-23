@@ -5,6 +5,8 @@ using UnityEngine;
 public class HelloWorld : MonoBehaviour
 {
     public List<string> lista = new List<string>();
+    public float velocidade = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class HelloWorld : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.Translate(new Vector3( velocidade , 0 , transform.position.z )* Time.deltaTime );
+
         
     }
 }
