@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class HelloWorld : MonoBehaviour
 {
+    public List<string> lista = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
-        string name = "Alberico";
-        int age = 34;
+        lista.Add("Hello");
 
-        var stringArray = new string[2];
+        lista.Add("World");
 
-        stringArray[0] = "Hello";
-        stringArray[ 1] = "World";
+ 
 
-        var frase = stringArray[0] + " " + stringArray[1];
 
-        print(frase);
+
+
+        print(lista[0] + " " + lista[1]);
         
     }
 
